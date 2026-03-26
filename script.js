@@ -1,13 +1,15 @@
 console.log("Hello");
 
 
-const result = fetch('https://jsonplaceholder.typicode.com/users')
+async function fetchData() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/users')
+    console.log( await response.json());
+}
+fetchData();
 
-console.log(result);
 console.log("Hi There");
-console.log("Hello");
-console.log("Hello");
-console.log("Hello");
+console.log("Some other code");
+
 
 
 
