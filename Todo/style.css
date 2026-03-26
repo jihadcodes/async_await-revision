@@ -13,7 +13,8 @@ html,body{
 
 .mainContainer{
     height: fit-content;
-    width: fit-content;
+    width: 100%;
+    max-width: 60%;
     margin: auto;
     padding: 20px 7px ;
     display: flex;
@@ -28,8 +29,8 @@ html,body{
     justify-content: space-between;
     margin-bottom: 20px;
     input{
-        width: 200px;
-        padding: 5px;
+        width: 80%;
+        padding: 10px 15px ;
         border-radius: 5px;
         border: none;
     }
@@ -42,3 +43,32 @@ html,body{
     color: white;
     cursor: pointer;
 }
+.taskContainer{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+   
+}
+.todo{
+     background-color: brown;
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+.taskContainer .todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} 
+    
+ .editBtn, .deleteBtn {
+    padding: 10px 17px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(156, 114, 114);
+    color: white;
+    cursor: pointer;
+}
+
